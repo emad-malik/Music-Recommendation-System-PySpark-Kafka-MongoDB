@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+</head>
+<body>
+    <h1>Player</h1>
+    {% if selected_track %}
+    <p>Now playing: {{ selected_track.title }}</p>
+    
+    <!-- Audio player for the selected track -->
+    <audio controls>
+        <source src="{{ selected_track.link }}" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    {% endif %}
+    
+    <h2>Recommended Tracks:</h2>
+    <ul>
+    {% for recommended_track in recommended_tracks %}
+        <li>{{ recommended_track }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
