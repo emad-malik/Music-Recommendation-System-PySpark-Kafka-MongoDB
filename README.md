@@ -56,5 +56,4 @@ To run the code:
 
 The developed system demonstrates an effective approach to extract and store audio features in MongoDB for further analysis. By utilizing MFCCs, log filter bank energies, and other relevant features, the system enables insights extraction and pattern recognition from music files, facilitating various downstream applications such as music recommendation systems, genre classification, and audio content analysis.
 
-For any issues or inquiries, please contact [Your Name] at [Your Email].
 
