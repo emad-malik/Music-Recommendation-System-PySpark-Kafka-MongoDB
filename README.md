@@ -1,7 +1,7 @@
 Tribute to the team members under this project:
 Muhammad Subhan 
 Hamza Asad
-# Streaming Data Insights for Audio Features Analysis
+# Music Recommendation Model PySpark
 
 ## Introduction
 
@@ -29,8 +29,12 @@ The provided Python code performs the following tasks:
 3. **Feature Extraction and Insertion into MongoDB**:
     - Extracted audio features, including MFCCs and log filter bank energies, are inserted into a MongoDB collection named 'audio_features' within the 'MusicModel' database.
     - Each document in the collection represents an audio file, with its associated features stored as fields.
+      
+4. **Recommendation Model**:
+   - Engineered KMeans Clustering Machine Learning model using PySpark's MLib library.
+   - Implemented hyperparameter tuning to improve the model.
 
-4. **Verification and Monitoring**:
+6. **Verification and Monitoring**:
     - The code includes verification steps to ensure successful extraction and insertion of audio features into MongoDB.
     - Monitoring mechanisms are implemented to track the number of documents inserted into the collection for quality assurance.
 
